@@ -13,10 +13,9 @@ jobs:
   build:
 
     runs-on: self-hosted
-    steps:
-      - run: git clone https://github.com/ZhengSherpas/nestjs-rest-sample.git
 
     steps:
+    - run: git clone https://github.com/ZhengSherpas/nestjs-rest-sample.git
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
